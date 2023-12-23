@@ -11,6 +11,7 @@
       "@root/*": ["./*"],
       "@images/*": ["./src/assets/images/*"],
       "@fonts/*": ["./src/assets/fonts/*"],
+      "@colors/*": ["./src/assets/colors/*"],
       "@strings/*": ["./src/res/strings/*"],
       "@components/*": ["./src/components/*"],
       "@routes/*": ["./src/routes/*"],

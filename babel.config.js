@@ -14,6 +14,7 @@ module.exports = {
           '@root': './',
           '@src': './src',
           '@assets': './src/assets',
+          '@colors': './src/assets/colors',
           '@images': './src/assets/images',
           '@fonts': './src/assets/fonts',
           '@strings': './src/res/strings',
