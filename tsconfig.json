@@ -1,3 +1,25 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"],
+      "@root/*": ["./*"],
+      "@images/*": ["./src/assets/images/*"],
+      "@fonts/*": ["./src/assets/fonts/*"],
+      "@strings/*": ["./src/res/strings/*"],
+      "@components/*": ["./src/components/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@contexts/*": ["./src/components/contexts/*"],
+      "@templates/*": ["./src/components/templates/*"],
+      "@organisms/*": ["./src/components/organisms/*"],
+      "@molecules/*": ["./src/components/molecules/*"],
+      "@atoms/*": ["./src/components/atoms/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "exclude": ["node_modules"]
 }
