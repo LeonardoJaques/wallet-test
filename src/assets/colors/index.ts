@@ -1,6 +1,8 @@
 export const colors = {
-  primary: '#142995',
-  secondary: '#12C2E9',
-  tertiary: '#A5FF32',
-  quaternary: '#111111',
+  default: '#142995',
+  register: '#12C2E9',
+  card: '#A5FF32',
+  blackCard: '#111111',
+  disabled: '#EEEEEE',
+  white: '#FFFFFF',
 };

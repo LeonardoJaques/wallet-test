@@ -20,7 +20,7 @@ export default function BackgroundScreenContainer({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.primary,
+    backgroundColor: colors.default,
   },
   elementTop: {
     position: 'absolute',

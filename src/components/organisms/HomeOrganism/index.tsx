@@ -1,13 +1,11 @@
-import {Text, View} from 'react-native';
 import React from 'react';
 import BackgroundScreenContainer from '@atoms/backgroundScreenContainer';
+import LandingMolecule from '@molecules/landingMolecule';
 
 export default function HomeOrganism() {
   return (
     <BackgroundScreenContainer>
-      <View>
-        <Text>HomeOrganism</Text>
-      </View>
+      <LandingMolecule />
     </BackgroundScreenContainer>
   );
 }
