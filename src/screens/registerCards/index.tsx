@@ -1,10 +1,6 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import RegisterCardsTemplate from '~/components/templates/RegisterCardsTemplate';
 
 export default function RegisterCard() {
-  return (
-    <View>
-      <Text>RegisterCard</Text>
-    </View>
-  );
+  return <RegisterCardsTemplate />;
 }

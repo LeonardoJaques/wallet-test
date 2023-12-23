@@ -29,11 +29,11 @@ export default function ButtonWallet({
   function changeTextColor(type: typeButton) {
     switch (type) {
       case 'advenced':
-        return colors.default;
-      case 'register':
         return colors.white;
-      case 'card':
+      case 'register':
         return colors.default;
+      case 'card':
+        return colors.white;
       default:
     }
   }
