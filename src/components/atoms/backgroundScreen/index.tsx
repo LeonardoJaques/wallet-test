@@ -3,7 +3,7 @@ import React from 'react';
 import {colors} from '@colors/index';
 import element from '@images/element.png';
 
-export default function BackgroundScreenContainer({
+export default function BackgroundScreen({
   children,
 }: {
   children: React.ReactNode;

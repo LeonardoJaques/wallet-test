@@ -1,12 +1,13 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 import React from 'react';
 import ButtonWallet from '@atoms/buttonWallet';
 import {useNavigation} from '@react-navigation/native';
+import CenterContainer from '~/components/atoms/centerContainer';
 
 export default function LandingMolecule() {
   const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <CenterContainer>
       <Text style={styles.title}>Wallet Test</Text>
       <ButtonWallet
         title="meus cartões"
@@ -18,16 +19,11 @@ export default function LandingMolecule() {
         typeButton="register"
         onPress={() => navigation.navigate('Register' as never)}
       />
-    </View>
+    </CenterContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    flex: 1,
-  },
   title: {
     fontSize: 40,
     fontWeight: 'normal',

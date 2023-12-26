@@ -1,11 +1,11 @@
 import React from 'react';
-import BackgroundScreenContainer from '@atoms/backgroundScreenContainer';
+import BackgroundScreen from '~/components/atoms/backgroundScreen';
 import LandingMolecule from '@molecules/landingMolecule';
 
 export default function HomeOrganism() {
   return (
-    <BackgroundScreenContainer>
+    <BackgroundScreen>
       <LandingMolecule />
-    </BackgroundScreenContainer>
+    </BackgroundScreen>
   );
 }

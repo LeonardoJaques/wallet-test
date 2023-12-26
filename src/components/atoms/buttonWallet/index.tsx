@@ -52,7 +52,7 @@ export default function ButtonWallet({
       ]}>
       <Text
         style={{
-          color: changeTextColor(typeButton),
+          color: disabled ? colors.disabledText : changeTextColor(typeButton),
         }}>
         {title}
       </Text>
