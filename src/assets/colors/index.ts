@@ -4,5 +4,6 @@ export const colors = {
   register: '#A5FF32',
   blackCard: '#111111',
   disabled: '#EEEEEE',
+  disabledText: '#BBBBBB',
   white: '#FFFFFF',
 };
