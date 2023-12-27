@@ -5,10 +5,10 @@ import {useNavigation} from '@react-navigation/native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export default function Header({title}: {title: string}) {
+export default function Header({title, style}: {title: string; style?: any}) {
   const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <TouchableOpacity
         onPress={() => {
           navigation.goBack();

@@ -14,6 +14,7 @@ module.exports = {
           '@root': './',
           '@src': './src',
           '@assets': './src/assets',
+          '@enums': './src/components/enums',
           '@colors': './src/assets/colors',
           '@images': './src/assets/images',
           '@fonts': './src/assets/fonts',

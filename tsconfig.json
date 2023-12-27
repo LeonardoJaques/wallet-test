@@ -9,6 +9,7 @@
     "paths": {
       "~/*": ["src/*"],
       "@root/*": ["./*"],
+      "@enums/*": ["./src/components/enums/*"],
       "@images/*": ["./src/assets/images/*"],
       "@fonts/*": ["./src/assets/fonts/*"],
       "@colors/*": ["./src/assets/colors/*"],
