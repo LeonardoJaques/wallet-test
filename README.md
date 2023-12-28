@@ -19,7 +19,8 @@ As tecnologias e ferramentas utilizadas nesta aplicação incluem:
 
 ## 🎯 Desafio ##
 
-Fazer uma integração com uma Web API usando o Axios.
+   Fazer uma layout baseado no figma.
+   https://www.figma.com/file/LQJIMG9Kg8kqL0821rBkiQ/Wallet-Test?type=design&node-id=0-1&mode=design&t=hBD943qsUHlzlueB-0
 
 ## 📁 Acesso ao projeto ##
 
