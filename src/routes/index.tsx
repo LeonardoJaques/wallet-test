@@ -4,11 +4,13 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '@screens/home';
 import RegisterCards from '@screens/registerCards';
 import AnimatedScreenView from '@screens/animatedScreen';
+import MyCardsView from '@screens/myCards';
 
 enum RoutesEnums {
   Home = 'Home',
   Register = 'Register',
   AnimatedScreen = 'AnimatedScreen',
+  MyCards = 'MyCards',
 }
 export default function Routes() {
   const Stack = createStackNavigator();
@@ -24,6 +26,7 @@ export default function Routes() {
           name={RoutesEnums.AnimatedScreen}
           component={AnimatedScreenView}
         />
+        <Stack.Screen name={RoutesEnums.MyCards} component={MyCardsView} />
       </Stack.Navigator>
     </NavigationContainer>
   );

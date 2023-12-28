@@ -12,7 +12,7 @@ export default function LandingMolecule() {
       <ButtonWallet
         title="meus cartões"
         typeButton="card"
-        onPress={() => console.log('test')}
+        onPress={() => navigation.navigate('MyCards' as never)}
       />
       <ButtonWallet
         title="cadastrar cartão"
