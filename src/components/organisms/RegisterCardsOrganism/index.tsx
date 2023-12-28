@@ -6,28 +6,18 @@ import ButtonWallet from '@atoms/buttonWallet';
 import InputText from '~/components/atoms/inputText';
 import Header from '@atoms/header';
 import {TypeInput, TypeMask, TypeIcon} from '@enums/index';
-import zod from 'zod';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {Controller, useForm} from 'react-hook-form';
 import {useAuth} from '@contexts/index';
 import Card from '~/components/atoms/card';
+import {schema} from '~/components/schemas';
+import {useNavigation} from '@react-navigation/native';
 
 export default function RegisterCardsOrganism() {
   const [enabled, setEnabled] = useState(false);
   const [isCardRegistered, setIsCardRegistered] = useState(false);
   const {setData, data} = useAuth();
-
-  const schema = zod.object({
-    cardNumber: zod.string().min(19, 'Numero do cartão deve ter 19 digitos'),
-    cardHolderName: zod
-      .string()
-      .min(3, 'Nome do titular deve ter no minimo 3 caracteres')
-      .max(20, 'Nome do titular deve ter no maximo 20 caracteres'),
-    validade: zod.string().min(5, 'Validade deve ter no minimo 5 caracteres'),
-    codigoSeguranca: zod
-      .string()
-      .min(3, 'Codigo de segurança deve ter no minimo 3 caracteres'),
-  });
+  const navigation = useNavigation();
 
   const {
     handleSubmit,
@@ -70,6 +60,11 @@ export default function RegisterCardsOrganism() {
     errors?.codigoSeguranca,
   ]);
 
+  function handleClickableIcon() {
+    //TODO: implementar camera
+    console.log('camera');
+  }
+
   return (
     <BackgroundScreen>
       <Header title="cadastro" style={styles.header} />
@@ -93,7 +88,7 @@ export default function RegisterCardsOrganism() {
                     icon
                     iconName={TypeIcon.camera}
                     iconPosition={'iconRight' as TypeIcon.IconPositionRight}
-                    clickableIcon={() => {}}
+                    clickableIcon={handleClickableIcon}
                     style={styles.input}
                     mask={TypeMask.cardNumber}
                     onBlur={onBlur}
@@ -193,7 +188,7 @@ export default function RegisterCardsOrganism() {
               isBlack
             />
             <ButtonWallet
-              onPress={handleSubmit(onSubmit)}
+              onPress={() => navigation.navigate('AnimatedScreen' as never)}
               title="avancar"
               typeButton="card"
               disabled={!enabled}

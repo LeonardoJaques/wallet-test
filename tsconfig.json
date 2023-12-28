@@ -10,6 +10,7 @@
       "~/*": ["src/*"],
       "@root/*": ["./*"],
       "@enums/*": ["./src/components/enums/*"],
+      "@schemas/*": ["./src/components/schemas/*"],
       "@images/*": ["./src/assets/images/*"],
       "@fonts/*": ["./src/assets/fonts/*"],
       "@colors/*": ["./src/assets/colors/*"],

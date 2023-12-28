@@ -1,7 +1,8 @@
 import {Image, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {colors} from '@colors/index';
-import element from '@images/element.png';
+import elementUp from '@images/elementUp.png';
+import elementDown from '@images/elementDown.png';
 
 export default function BackgroundScreen({
   children,
@@ -10,9 +11,9 @@ export default function BackgroundScreen({
 }): React.JSX.Element {
   return (
     <View style={styles.container}>
-      <Image source={element} style={styles.elementTop} />
+      <Image source={elementUp} style={styles.elementTop} />
       {children}
-      <Image source={element} style={styles.elementBottom} />
+      <Image source={elementDown} style={styles.elementBottom} />
     </View>
   );
 }
@@ -31,6 +32,5 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 0,
     right: 0,
-    transform: [{rotate: '180deg'}],
   },
 });
