@@ -13,6 +13,7 @@ As tecnologias e ferramentas utilizadas nesta aplicação incluem:
 
 * Zod para validações
 * react-hooks-forms para controle dos formulários
+* animações: com o react-native-animatable
 * TypeScript: linguagem de programação fortemente tipada
 * React Native: framework para desenvolvimento de aplicativos para plataformas móveis
 * Axios: um cliente HTTP baseado em Promises usado para fazer requisições
@@ -21,6 +22,7 @@ As tecnologias e ferramentas utilizadas nesta aplicação incluem:
 
    Fazer uma layout baseado no figma.
    https://www.figma.com/file/LQJIMG9Kg8kqL0821rBkiQ/Wallet-Test?type=design&node-id=0-1&mode=design&t=hBD943qsUHlzlueB-0
+   inserir animações com o react-native-animatable"
 
 ## 📁 Acesso ao projeto ##
 
