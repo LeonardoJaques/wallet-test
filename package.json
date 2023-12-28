@@ -8,7 +8,10 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "server": "json-server --watch src/services/db.json --port 3000"
+    "server": "json-server --watch src/services/db.json --port 3000",
+    "author":"Leonardo Jaques",
+    "email":"jaques.projetos@outlook.com" 
+    
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.3",
