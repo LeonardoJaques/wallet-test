@@ -1,5 +1,6 @@
-
 # Wallet-Test #
+![Animação](https://github.com/LeonardoJaques/wallet-test/assets/28495699/a25aa960-950d-4647-bceb-1081923f8e38)
+
 
 Uma aplicação para pagamento de cartões e TypeScript no React Native. É feita a integração com uma Web API usando o Axios.
 
