@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import BackgroundScreenMyCards from '@atoms/backgroundScreenMyCards';
 import HeaderMyCards from '@molecules/headerMyCards';
 import Card from '@atoms/card';
@@ -13,6 +13,10 @@ export default function Mycards() {
   const [showCardA, setShowCardA] = useState(true);
   const [showCardB, setShowCardB] = useState(true);
   const [thirdChoiseCard, setThirdChoiseCard] = useState(false);
+
+  useEffect(() => {
+    console.log('data', data.cards[0].cvv);
+  }, [data]);
 
   function handleChoiseCard() {
     switch (thirdChoiseCard) {
@@ -30,6 +34,7 @@ export default function Mycards() {
         break;
     }
   }
+  const {name, number, date} = data?.cards[0];
 
   return (
     <BackgroundScreenMyCards>
@@ -38,9 +43,9 @@ export default function Mycards() {
         {showCardA && (
           <View style={styles.firtCard}>
             <Card
-              name={data?.cardHolderName || 'Nome do Titular'}
-              numberCard={data?.cardNumber || '1234567891234567'}
-              validade={data?.validade || '12/24'}
+              name={name || 'Nome do Titular'}
+              numberCard={number || '1234567891234567'}
+              validade={date || '12/24'}
               onPressIn={() => setEnabled(!enabled)}
               isBlack={enabled}
             />
@@ -50,9 +55,9 @@ export default function Mycards() {
           <View style={styles.lastCard}>
             {showCardB && (
               <Card
-                name={data?.cardHolderName || 'Nome do Titular'}
-                numberCard={data?.cardNumber || '1234567891234567'}
-                validade={data?.validade || '12/24'}
+                name={name || 'Nome do Titular'}
+                numberCard={number || '1234567891234567'}
+                validade={date || '12/24'}
                 onPressIn={() => setEnabled(!enabled)}
                 isBlack={!enabled}
               />
@@ -76,9 +81,9 @@ export default function Mycards() {
           {thirdChoiseCard && (
             <View style={styles.hideCard}>
               <Card
-                name={data?.cardHolderName || 'Nome do Titular'}
-                numberCard={data?.cardNumber || '1234567891234567'}
-                validade={data?.validade || '12/24'}
+                name={name || 'Nome do Titular'}
+                numberCard={number || '1234567891234567'}
+                validade={date || '12/24'}
                 onPressIn={() => setEnabled(!enabled)}
                 isBlack={enabled}
               />
